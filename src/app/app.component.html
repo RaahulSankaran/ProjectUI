@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/home"><img src="../assets/popcorn-for-movies.svg" width="30" height="30" alt="" loading="lazy"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="input-group my-2 col-sm-5">
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+        ALL
+      </button>
+      <div class="dropdown-menu dropdown-menu-lg-right">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Comedy</button>
+        <button class="dropdown-item" type="button">Thriller</button>
+      </div>
+    </div>
+    <input type="text" class="form-control" placeholder="Search Something" aria-label="search" aria-describedby="basic-addon1">
+    <div class="input-group-prepend">
+      <a class="btn btn-primary" href="#" role="button">Search</a>
+    </div>
+  </div>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/watchlist">WatchList</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/signin">SignIn</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center">
+  
+  
+<router-outlet></router-outlet>
+  
+</div>
+

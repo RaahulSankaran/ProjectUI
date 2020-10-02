@@ -1,0 +1,82 @@
+
+
+
+
+  <!-- Using  Json-->
+<div class="container"><h1>{{title}}</h1></div>
+<div *ngFor='let movie of movies'>
+
+  <div class="card" style="max-height: 50%; max-width: 100%;"><a routerLink='/movie'>
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{movie.poster}}" class="card-img" alt="joker">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{movie.title}}</h5>
+         
+          <p class="card-text">{{movie.storyline}}</p>
+          <p class="card-text">{{movie.actors}}</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div></a>
+  </div>
+ 
+</div>
+
+
+
+
+<!--Card Decks-->
+<div class="card-deck">
+    <div class="card" style="max-height: 50%; max-width: 50%;">
+      <img src="../../assets/img/batman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Batman</h5>
+        <h4>Rating</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card" style="max-height: 50%; max-width: 50%;">
+      <img src="../../assets/img/bighero.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Big Hero 6</h5>
+        <h4>Rating</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card" style="max-height: 50%; max-width: 50%;">
+      <img src="../../assets/img/justiceleague.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Justice League</h5>
+        <h4>Rating</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
